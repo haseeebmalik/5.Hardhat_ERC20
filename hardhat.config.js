@@ -13,10 +13,15 @@ const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || ""
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   defaultNetwork:"hardhat",
+
+
+
+
   networks:{
     hardhat:{
       chainId:31337,
       blockConfirmations:1,
+      
     },
     goerli: {
       url: GOERLI_RPC_URL,
